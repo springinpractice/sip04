@@ -11,10 +11,10 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.04_03</artifactId>
+	<artifactId>com.springinpractice.04_04</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 4.3</name>
+	<name>Spring in Practice Recipe 4.4</name>
 	<description>
 		Implements form validation.
 	</description>
