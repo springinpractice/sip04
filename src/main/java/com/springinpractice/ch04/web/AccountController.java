@@ -1,5 +1,6 @@
 package com.springinpractice.ch04.web;
 
+import javax.inject.Inject;
 import javax.validation.Valid;
 
 import org.springframework.beans.propertyeditors.StringTrimmerEditor;
@@ -13,6 +14,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import com.springinpractice.ch04.domain.Account;
+import com.springinpractice.ch04.service.AccountService;
+
 /**
  * @author Willie Wheeler (willie.wheeler@gmail.com)
  */
@@ -21,6 +25,8 @@ import org.springframework.web.bind.annotation.RequestMethod;
 public class AccountController {
 	private static final String VN_REG_FORM = "users/registrationForm";
 	private static final String VN_REG_OK = "redirect:users/registration_ok.html";
+	
+	@Inject private AccountService accountService;
 	
 	@InitBinder
 	public void initBinder(WebDataBinder binder) {
@@ -45,6 +51,7 @@ public class AccountController {
 			BindingResult result) {
 		
 		convertPasswordError(result);
+		accountService.registerAccount(toAccount(form), form.getPassword(), result);
 		return (result.hasErrors() ? VN_REG_FORM : VN_REG_OK);
 	}
 
@@ -59,5 +66,17 @@ public class AccountController {
 				}
 			}
 		}
+	}
+	
+	private static Account toAccount(AccountForm form) {
+		Account account = new Account();
+		account.setUsername(form.getUsername());
+		account.setFirstName(form.getFirstName());
+		account.setLastName(form.getLastName());
+		account.setEmail(form.getEmail());
+		account.setMarketingOk(form.isMarketingOk());
+		account.setAcceptTerms(form.getAcceptTerms());
+		account.setEnabled(true);
+		return account;
 	}
 }

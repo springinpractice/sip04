@@ -33,17 +33,26 @@
 		</dependency>
 		<dependency>
 			<groupId>${project.groupId}</groupId>
+			<artifactId>com.springinpractice.deps-hibernate</artifactId>
+			<version>1.0-RELEASE</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
 			<artifactId>com.springinpractice.deps-web</artifactId>
 			<version>1.0-RELEASE</version>
 			<type>pom</type>
 		</dependency>
 	</dependencies>
-	
+
 	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.mortbay.jetty</groupId>
 				<artifactId>maven-jetty-plugin</artifactId>
+				<configuration>
+					<jettyEnvXml>${chapter.conf.dir}/jetty-env.xml</jettyEnvXml>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
