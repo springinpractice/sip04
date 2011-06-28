@@ -174,7 +174,24 @@ input[type="submit"] {
 	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#555), to(#333));
 }
 
+.warningBox {
+	margin: 20px 0;
+	padding: 20px;
+	background-color: #333;
+	color: #EEE;
+	
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+.warningMessage {
+	padding-left: 20px;
+	background: url(../images/icons/error.png) left no-repeat;
+}
+
 .fieldError {
+	margin-top: 5px;
 	padding-left: 20px;
 	background: url(../images/icons/error.png) left no-repeat;
 }

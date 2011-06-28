@@ -15,19 +15,35 @@
 	</head>
 	<body>
 		<form:form cssClass="main" action="${submitRegistrationUrl}" modelAttribute="account">
+			<form:errors path="*">
+				<div class="warningBox">
+					<span class="warningMessage"><spring:message code="error.global" /></span>
+				</div>
+			</form:errors>
+			
 			<h1><c:out value="${pageTitle}" /></h1>
 			
 			<p><spring:message code="newUserRegistration.message.allFieldsRequired" /></p>
 			
 			<div class="formItem yui-gf">
 				<div class="yui-u first"><spring:message code="newUserRegistration.label.username" /></div>
-				<div class="yui-u"><form:input path="username" cssClass="short" /></div>
+				<div class="yui-u">
+					<div><form:input path="username" cssClass="short" /></div>
+					<form:errors path="username">
+						<div class="fieldError"><form:errors path="username" htmlEscape="false" /></div>
+					</form:errors>
+				</div>
 			</div>
 			
 			<%-- There is a <form:password> tag, but we use straight HTML to suppress form binding --%>
 			<div class="formItem yui-gf">
 				<div class="yui-u first"><spring:message code="newUserRegistration.label.password" /></div>
-				<div class="yui-u"><input type="password" name="password" class="short" /></div>
+				<div class="yui-u">
+					<div><input type="password" name="password" class="short" /></div>
+					<form:errors path="password">
+						<div class="fieldError"><form:errors path="password" htmlEscape="false" /></div>
+					</form:errors>
+				</div>
 			</div>
 			<div class="formItem yui-gf">
 				<div class="yui-u first"><spring:message code="newUserRegistration.label.confirmPassword" /></div>
@@ -36,23 +52,43 @@
 
 			<div class="formItem yui-gf">
 				<div class="yui-u first"><spring:message code="newUserRegistration.label.firstName" /></div>
-				<div class="yui-u"><form:input path="firstName" cssClass="short" /></div>
+				<div class="yui-u">
+					<div><form:input path="firstName" cssClass="short" /></div>
+					<form:errors path="firstName">
+						<div class="fieldError"><form:errors path="firstName" htmlEscape="false" /></div>
+					</form:errors>
+				</div>
 			</div>
 			<div class="formItem yui-gf">
 				<div class="yui-u first"><spring:message code="newUserRegistration.label.lastName" /></div>
-				<div class="yui-u"><form:input path="lastName" cssClass="short" /></div>
+				<div class="yui-u">
+					<div><form:input path="lastName" cssClass="short" /></div>
+					<form:errors path="lastName">
+						<div class="fieldError"><form:errors path="lastName" htmlEscape="false" /></div>
+					</form:errors>
+				</div>
 			</div>
 			<div class="formItem yui-gf">
 				<div class="yui-u first"><spring:message code="newUserRegistration.label.email" /></div>
-				<div class="yui-u"><form:input path="email" cssClass="medium" /></div>
+				<div class="yui-u">
+					<div><form:input path="email" cssClass="medium" /></div>
+					<form:errors path="email">
+						<div class="fieldError"><form:errors path="email" htmlEscape="false" /></div>
+					</form:errors>
+				</div>
 			</div>
 			<div class="formItem">
 				<form:checkbox id="marketingOk" path="marketingOk" />
 				<label for="marketingOk"><spring:message code="newUserRegistration.label.marketingOk" /></label>
 			</div>
 			<div class="formItem">
-				<form:checkbox id="acceptTerms" path="acceptTerms" />
-				<label for="acceptTerms"><spring:message code="newUserRegistration.label.acceptTerms" /></label>
+				<div>
+					<form:checkbox id="acceptTerms" path="acceptTerms" />
+					<label for="acceptTerms"><spring:message code="newUserRegistration.label.acceptTerms" /></label>
+				</div>
+				<form:errors path="acceptTerms">
+					<div class="fieldError"><form:errors path="acceptTerms" htmlEscape="false" /></div>
+				</form:errors>
 			</div>
 			<div class="formItem">
 				<spring:message code="newUserRegistration.label.privacyPolicy" />

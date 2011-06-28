@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.04_02</artifactId>
+	<artifactId>com.springinpractice.04_03</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 4.2</name>
+	<name>Spring in Practice Recipe 4.3</name>
 	<description>
-		Externalizes text into a resource bundle for easier management and localization.
+		Implements form validation.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
