@@ -11,12 +11,12 @@
 		<version>1.0-RELEASE</version>
 	</parent>
 	
-	<artifactId>com.springinpractice.04_01</artifactId>
+	<artifactId>com.springinpractice.04_02</artifactId>
 	<packaging>war</packaging>
 	
-	<name>Spring in Practice Recipe 4.1</name>
+	<name>Spring in Practice Recipe 4.2</name>
 	<description>
-		Presents a bare-bones user registration form based on Spring Web MVC.
+		Externalizes text into a resource bundle for easier management and localization.
 	</description>
 	<url>http://springinpractice.com/</url>
 	

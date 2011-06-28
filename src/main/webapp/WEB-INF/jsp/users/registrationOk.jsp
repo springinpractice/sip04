@@ -5,13 +5,15 @@
 
 <c:url var="newRegistrationUrl" value="/users/new.html" />
 
+<spring:message var="pageTitle" code="registrationOk.pageTitle" />
+
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
-		<title>Registration confirmed</title>
+		<title><c:out value="${pageTitle}" /></title>
 	</head>
 	<body>
-		<h1>Registration confirmed</h1>
-		<p>Thank you for registering.</p>
-		<p><a href="${newRegistrationUrl}">Register another</a></p>
+		<h1><c:out value="${pageTitle}" /></h1>
+		<p><spring:message code="registrationOk.message.thanks" /></p>
+		<p><a href="${newRegistrationUrl}"><spring:message code="registrationOk.label.registerAnother" /></a></p>
 	</body>
 </html>
