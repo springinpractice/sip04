@@ -4,6 +4,21 @@
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
 	version="2.5">
 
+	<context-param>
+		<param-name>appName</param-name>
+		<param-value>SiP University</param-value>
+	</context-param>
+	<context-param>
+		<param-name>recipe</param-name>
+		<param-value>4.3</param-value>
+	</context-param>
+	<context-param>
+		<param-name>aboutThisRecipe</param-name>
+		<param-value><![CDATA[
+			<p>Recipe 4.3 shows how to add form validation to our registration form using Spring Web MVC and its support
+			for JSR-303 bean validation.</p>
+		]]></param-value>
+	</context-param>
 	<filter>
 		<filter-name>sitemesh</filter-name>
 		<filter-class>com.opensymphony.sitemesh.webapp.SiteMeshFilter</filter-class>

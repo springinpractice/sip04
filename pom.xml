@@ -16,7 +16,8 @@
 	
 	<name>Spring in Practice Recipe 4.3</name>
 	<description>
-		Implements form validation.
+		Recipe 4.3 shows how to add form validation to our registration form using Spring Web MVC and its support for
+		JSR-303 bean validation.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
@@ -36,6 +37,12 @@
 			<artifactId>com.springinpractice.deps-web</artifactId>
 			<version>1.0-RELEASE</version>
 			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>com.springinpractice.skin</artifactId>
+			<version>1.0-RELEASE</version>
+			<type>war</type>
 		</dependency>
 	</dependencies>
 	
