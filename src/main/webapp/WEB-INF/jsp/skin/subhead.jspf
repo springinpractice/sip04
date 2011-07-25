@@ -1,0 +1,13 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+
+<c:url var="homeUrl" value="/home.html" />
+<c:url var="registerUrl" value="/users/new.html" />
+
+<div id="subhd">
+	<div id="topNav">
+		<ul>
+			<li><a href="${homeUrl}">Home</a></li>
+			<li><a href="${registerUrl}">Register</a></li>
+		</ul>
+	</div>
+</div>

@@ -33,11 +33,11 @@ create table account_role (
 ) engine = InnoDb;
 
 insert into account values
-    (1, 'juan', 'Juan', 'Cazares', 'juan.cazares@example.com', 'juan', 1, 1, 1, null, null),
-    (2, 'elvira', 'Elvira', 'Cazares', 'elvira.cazares@example.com', 'elvira', 1, 1, 1, null, null),
-    (3, 'julia', 'Julia', 'Cazares', 'julia.cazares@example.com', 'julia', 1, 1, 1, null, null),
-    (4, 'daniel', 'Daniel', 'Cazares', 'daniel.cazares@example.com', 'daniel', 1, 1, 1, null, null),
-    (5, 'paula', 'Paula', 'Cazares', 'paula.cazares@example.com', 'paula', 1, 1, 1, null, null);
+    (1, 'juan', 'Juan', 'Cazares', 'juan.cazares@example.com', 'p@ssword', 1, 1, 1, null, null),
+    (2, 'elvira', 'Elvira', 'Cazares', 'elvira.cazares@example.com', 'p@ssword', 1, 1, 1, null, null),
+    (3, 'julia', 'Julia', 'Cazares', 'julia.cazares@example.com', 'p@ssword', 1, 1, 1, null, null),
+    (4, 'daniel', 'Daniel', 'Cazares', 'daniel.cazares@example.com', 'p@ssword', 1, 1, 1, null, null),
+    (5, 'paula', 'Paula', 'Cazares', 'paula.cazares@example.com', 'p@ssword', 1, 1, 1, null, null);
 
 insert into role values
     (1, 'user'),

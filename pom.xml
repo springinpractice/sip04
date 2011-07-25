@@ -16,7 +16,7 @@
 	
 	<name>Spring in Practice Recipe 4.4</name>
 	<description>
-		Implements form validation.
+		Recipe 4.4 saves the new user registration data into a database using Hibernate.
 	</description>
 	<url>http://springinpractice.com/</url>
 	
@@ -42,6 +42,12 @@
 			<artifactId>com.springinpractice.deps-web</artifactId>
 			<version>1.0-RELEASE</version>
 			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>com.springinpractice.skin</artifactId>
+			<version>1.0-RELEASE</version>
+			<type>war</type>
 		</dependency>
 	</dependencies>
 

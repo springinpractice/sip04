@@ -5,6 +5,20 @@
 	version="2.5">
 
 	<context-param>
+		<param-name>appName</param-name>
+		<param-value>SiP University</param-value>
+	</context-param>
+	<context-param>
+		<param-name>recipe</param-name>
+		<param-value>4.4</param-value>
+	</context-param>
+	<context-param>
+		<param-name>aboutThisRecipe</param-name>
+		<param-value><![CDATA[
+			<p>Recipe 4.4 saves the new user registration data into a database using Hibernate.</p>
+		]]></param-value>
+	</context-param>
+	<context-param>
 		<param-name>contextConfigLocation</param-name>
 		<param-value>classpath:/spring/beans-service.xml</param-value>
 	</context-param>
