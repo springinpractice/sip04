@@ -15,7 +15,7 @@
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>In recipe 4.2 we replace hardcoded strings in the JSPs with externalized strings. This supports both
+			<p>In recipe 4.2 we replace hardcoded strings in the JSPs with externalized strings. This supports
 			internationalization. It also supports a separation of duties between developers and, for example, user
 			experience specialists.</p>
 		]]></param-value>
