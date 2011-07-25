@@ -16,7 +16,7 @@
 	
 	<name>Spring in Practice Recipe 4.2</name>
 	<description>
-		Externalizes text into a resource bundle for easier management and localization.
+		In recipe 4.2 we replace hardcoded strings in the JSPs with externalized strings.
 	</description>
 	<url>http://springinpractice.com/</url>
 	

@@ -10,13 +10,14 @@
 	</context-param>
 	<context-param>
 		<param-name>recipe</param-name>
-		<param-value>4.1</param-value>
+		<param-value>4.2</param-value>
 	</context-param>
 	<context-param>
 		<param-name>aboutThisRecipe</param-name>
 		<param-value><![CDATA[
-			<p>Recipe 4.1 shows how to use Spring Web MVC to create a basic user registration form. This recipe is the
-			basis for the remaining recipes in this chapter.</p>
+			<p>In recipe 4.2 we replace hardcoded strings in the JSPs with externalized strings. This supports both
+			internationalization. It also supports a separation of duties between developers and, for example, user
+			experience specialists.</p>
 		]]></param-value>
 	</context-param>
 	<filter>
