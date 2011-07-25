@@ -37,6 +37,12 @@
 			<version>1.0-RELEASE</version>
 			<type>pom</type>
 		</dependency>
+		<dependency>
+			<groupId>${project.groupId}</groupId>
+			<artifactId>com.springinpractice.skin</artifactId>
+			<version>1.0-RELEASE</version>
+			<type>war</type>
+		</dependency>
 	</dependencies>
 	
 	<build>
