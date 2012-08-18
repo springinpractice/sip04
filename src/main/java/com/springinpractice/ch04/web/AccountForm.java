@@ -1,7 +1,7 @@
 package com.springinpractice.ch04.web;
 
-import org.apache.commons.lang.builder.ToStringBuilder;
-import org.apache.commons.lang.builder.ToStringStyle;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
 
 /**
  * @author Willie Wheeler (willie.wheeler@gmail.com)
@@ -44,9 +44,9 @@ public class AccountForm {
 
 	public String toString() {
 		return new ToStringBuilder(this, ToStringStyle.SHORT_PREFIX_STYLE)
+			.append("userName", username)
 			.append("firstName", firstName)
 			.append("lastName", lastName)
-			.append("userName", username)
 			.append("email", email)
 			.append("marketingOk", marketingOk)
 			.append("acceptTerms", acceptTerms)
