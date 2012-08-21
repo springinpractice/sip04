@@ -14,7 +14,6 @@ import java.util.Set;
 
 import javax.inject.Inject;
 
-import org.hibernate.Hibernate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -38,6 +37,7 @@ public class AccountServiceImpl implements AccountService {
 	@Inject private AccountDao accountDao;
 	@Inject private RoleDao roleDao;
 	
+	@Override
 	@Transactional(readOnly = false)	
 	public boolean registerAccount(Account account, String password, Errors errors) {
 		validateUsername(account.getUsername(), errors);
@@ -58,11 +58,5 @@ public class AccountServiceImpl implements AccountService {
 			log.debug("Validation failed: duplicate username");
 			errors.rejectValue("username", "error.duplicate", new String[] { username }, null);
 		}
-	}
-	
-	public Account getAccountByUsername(String username) {
-		Account account = accountDao.findByUsername(username);
-		if (account != null) { Hibernate.initialize(account.getRoles()); }
-		return account;
 	}
 }
