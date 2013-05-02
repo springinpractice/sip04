@@ -1,11 +1,9 @@
 /* 
- * $Id$
+ * Copyright (c) 2013 Manning Publications Co.
  * 
- * Copyright (c) 2010 Manning Publications Co.
- * 
- * Book web site   - http://www.manning.com/wheeler/
- * Book blog       - http://springinpractice.com/
- * Author web site - http://wheelersoftware.com/
+ * Book: http://manning.com/wheeler/
+ * Blog: http://springinpractice.com/
+ * Code: https://github.com/springinpractice
  */
 package com.springinpractice.ch04.dao;
 
@@ -13,7 +11,6 @@ import com.springinpractice.ch04.domain.Account;
 import com.springinpractice.dao.Dao;
 
 /**
- * @version $Id$
  * @author Willie Wheeler (willie.wheeler@gmail.com)
  */
 public interface AccountDao extends Dao<Account> {
