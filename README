@@ -1,9 +1,13 @@
 ========================================================================================================================
-Spring in Practice, Chapter 4
+README - Spring in Practice Recipe 4.2
 
-Copyright (c) 2008-2011 Manning Publications Co.
+Copyright (c) 2013 Manning Publications Co.
 
 Willie Wheeler (willie.wheeler@gmail.com)
+
+Book: http://manning.com/wheeler/
+Blog: http://springinpractice.com/
+Code: https://github.com/springinpractice
 ========================================================================================================================
 
 This chapter shows how to implement web forms using Spring.
